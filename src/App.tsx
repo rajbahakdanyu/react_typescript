@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
 
+interface IState {
+	people: { name: string; age: number; url: string; note?: string }[];
+}
+
 function App() {
-	const [people, setPeople] = useState([]);
+	const [people, setPeople] = useState<IState["people"]>([]);
 
 	people.map((person) => {
 		person.name;

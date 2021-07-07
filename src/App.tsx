@@ -8,10 +8,6 @@ interface IState {
 function App() {
 	const [people, setPeople] = useState<IState["people"]>([]);
 
-	people.map((person) => {
-		person.name;
-	});
-
 	return (
 		<div className='App'>
 			<h1>People invited to my party</h1>

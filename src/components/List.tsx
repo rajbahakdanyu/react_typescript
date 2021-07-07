@@ -1,5 +1,7 @@
+import { IState as Props } from "../App";
+
 interface IProps {
-	people: { name: string; age: number; url: string; note?: string }[];
+	people: Props["people"];
 }
 
 const List = ({ people }: IProps) => {
